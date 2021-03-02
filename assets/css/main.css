@@ -66,7 +66,6 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    z-index: 9;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -215,7 +214,9 @@ img {
         border-left: 1px solid #e8e8e8;
         border-right: 1px solid #e8e8e8;
     }
-
+    .hero{
+        height: 100vh;
+    }
     .table-responsive-02 td {
         position: relative;
         padding: 15px 10px 15px 30% !important;
@@ -228,6 +229,13 @@ img {
         left: 20px;
         width: 25%;
         padding-right: 10px;
+    }
+    #googlemapmobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto !important;
     }
 }
 a {
@@ -1815,13 +1823,11 @@ ul {
 }
 
 .footer #back-to-top {
-    position: absolute;
+    position: fixed;
+    z-index: 999l;
+    bottom: 50px;
+    right: 50px;
     width: 40px;
-    height: 40px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    top: -20px;
     height: 40px;
     line-height: 48px;
     color: #333;
@@ -1830,7 +1836,6 @@ ul {
     cursor: pointer;
     font-size: 36px;
     text-align: center;
-    z-index: 99;
 }
 
 .footer__wrapper {
